@@ -9,6 +9,11 @@ if (CMAKE_INSTALL_PREFIX_INITIALIZED_TO_DEFAULT)
     set (CMAKE_INSTALL_PREFIX "/usr/local/lib/jieba" CACHE PATH "default install path" FORCE )
 endif()
 
-ADD_DEFINITIONS(-O3 -Wall -g -std=c++11)
+ADD_DEFINITIONS(-O3 -Wall -g)
+IF(APPLE) # mac os
+    ADD_DEFINITIONS(-std=c++0x)
+else()
+    ADD_DEFINITIONS(-std=c++11)
+endif()
 
 ADD_SUBDIRECTORY(lib)
