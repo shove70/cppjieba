@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="jiaba"
+    targetNamespace="http://tempuri.org/jiaba.xsd"
+    elementFormDefault="qualified"
+    xmlns="http://tempuri.org/jiaba.xsd"
+    xmlns:mstns="http://tempuri.org/jiaba.xsd"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+>
+</xs:schema>
